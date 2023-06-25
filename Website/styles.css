@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Website/Extras/Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArchitectsDaughter';
+  src: url('/Website/Extras/Fonts/ArchitectsDaughter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(240, 232, 232, 0.7);
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(/Website/Extras/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'ArchitectsDaughter', sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+h1.headline {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgb(102, 153, 204);
+  line-height: 1;
+}
+
+span.larger {
+  font-size: 40px;
+  vertical-align: -3px;
+
+}
+
+.links a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 102, 153);
+  transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+  transform: scale(1.1);
+}
+
+.links a:active {
+  background-color: transparent;
+  border: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.links a:active:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.about-content {
+  font-family: 'ArchitectsDaughter', sans-serif;
+  position: relative;
+  color: rgb(102, 165, 204)
+}
+
+.about-paragraph {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+}
+
+.top-left {
+  top: -55px;
+  left: 200px;
+}
+
+.bottom-right {
+  bottom: -40px;
+  right: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-paragraph {
+    position: static;
+     width: auto;
+     padding: 20px;
+     margin-bottom: 20px;
+    }
+  
+  .top-left,
+  .bottom-right {
+    top: initial;
+    left: initial;
+    right: initial;
+    bottom: initial;
+    width: 300px;
+    padding: 20px; 
+  }
+  
+  header {
+    background-color: rgba(240, 232, 232, 0);
+  }
+}
